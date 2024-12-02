@@ -1,80 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            
         }
-        div {
-            float: left;
-            padding: 15px;
-            width: 100%;
-            margin-top: 10px;
+        h1,.pie p{
+            padding: 1em;
         }
-        html {
-            font-family: "Lucida Sans", sans-serif;
+        img{
+            padding:0 5%;
         }
-        .header {
-            background-color:#A8720A;
-            color: #ffFFFF;
-            width: 100%;
+       .cabecera,.pie{
+        text-align: center;
+        background-color: green;
+        color: white;
+       }
+       .lateral{
+        float: left;
+        height: 100px;
+       }
+       .camisetas{
+        margin-left: 12em;
+       }
+
+       @media (max-width: 1100px) {
+       }
+       @media (max-width: 850px) {
+        .lateral{
+            display: none;
         }
-        .izq{ border: 2px solid;
+        .camisetas{
+            margin-left: 0;
         }
-        .derecha {
-            background-color: #D89718;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
+        img{
+            padding:0 6%;
         }
-        .footer {
-            background-color: #A8720A;
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-        }
-        
-        h1.cuerpo{color:#A8720A}
-    </style>
-       
-        
+       }
+       </style>
 </head>
+
 <body>
-    <div class="header">
-        <h1>Diseño de interfaces web</h1>
-      </div>
-      
-      <div class="izq">
-        <ul>
-          <li>Objetivos</li>
-          <li>Contenidos</li>
-          <li>Criterios de evaluación</li>
-          <li>Criterios de calificación</li>
-        </ul>
-      </div>
-      
-      <div class="centro">
-        <h1 class="cuerpo">Diseño de Interfaces Web</h1>
-        <p>Módulo perteneciente al currículum de Técnico Superior en Desarrollo de aplicaciones Web.</p>
-      </div>
-      
-      <div class="derecha">
-          <h2>¿Qué unidad de competencia a desarrolla?</h2>
-          <p>Desarrollar elementos software en el entorno cliente.</p>
-          <h2>¿Cuál es la duración del módulo</h2>
-          <p>115 horas lectivas, impartidas a razón de 6 horas semanales.</p>
-          <h2>¿En qué nivel de cualificación se encuentra?</h2>
-          <p>Se trata de cualificaciones que pertenecen al Nivel 1 del Marco Español de Cualificaciones para la educación superior (Técnico Superior).</p>
-      </div>
-      
-      </div>
-      
-      <div class="footer">
-        <p>Decreto 1/2011, de 13 de enero (BOCM de 31 de enero de 2011). </p>
-      </div>
-      
+    <div class="cabecera">
+        <h1>Venta de camisetas</h1>
+    </div>
+    <div class="lateral">
+        <p>Elije tu camiseta</p>
+        <ol>
+            <li>Milan</li>
+            <li>Paris</li>
+            <li>Barcelona</li>
+            <li>Arsenal</li>
+            <li>Bayern</li>
+            <li>Manchester</li>
+        </ol>
+    </div>
+    <div class="camisetas">
+        <img src="./1.Milan.jpg" alt="">
+        <img src="./2.paris-saint-germain.jpg" alt="">
+        <img src="./3.Barcelona.jpg" alt="">
+        <img src="./4.Arsenal.jpg" alt="">
+        <img src="./5.Bayern.jpg" alt="">
+        <img src="./6.Manchester.jpg" alt="">
+    </div>
+    <div class="pie">
+        <p>Gracias por comprar</p>
+    </div>
 </body>
+
 </html>
